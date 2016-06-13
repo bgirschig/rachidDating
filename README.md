@@ -6,9 +6,10 @@ Built using cordova
 ## Setup
 ```bash
 # get the project
-git clone https://github.com/Mickeymosso/timer.git
+git clone https://github.com/bgirschig/rachidDating.git
+# go to project dir
+cd rachidDating/
 # init project
-cd /path/to/project/dir
 npm install
 
 # project is now ready
