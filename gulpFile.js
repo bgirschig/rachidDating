@@ -35,7 +35,10 @@ gulp.task('webAppBuild', function() {
 	gulp.src([settings.sourceFolder+"img/**"], {base: ''})
 	.pipe(gulp.dest(settings.buildFolder+"img/"));
 
-	// run unit tests
+})
+
+// runs unit tests
+gulp.task('unit-test', function(){	
 	gulp.src([settings.sourceFolder+"/js/utils.js", settings.testFolder+"**/*.js"])
 	.pipe(concat(settings.testFolder+'tests.js'))
 	.pipe(testing());
@@ -56,7 +59,7 @@ gulp.task('run', function(){
 	console.log("building and running cordova project...".yellow);
 	shellExec("(cd cordovaProject/; cordova run "+settings.platform+")", function(err, stdout, stderr){
 		if(stderr==null || stderr==""){
-			console.log("success!".green);
+			console.log("\nbuild success!\n".green);
 		} else {
     		console.log("cordova build / run failed:".red);
     		console.log(stderr);
@@ -67,5 +70,6 @@ gulp.task('run', function(){
 gulp.task("default", [
 	'clean'
 	,'webAppBuild'
+	,'unit-test'
 	,"run"
 ]);
