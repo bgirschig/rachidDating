@@ -1,13 +1,26 @@
-# workflow test 1
+# Rachid Dating
 
-With little work on the gulpfile, this workflow seems really nice:
+A dating app targetted at underground users.
+Built using cordova
 
-This command
+## Setup
+```bash
+# get the project
+git clone https://github.com/Mickeymosso/timer.git
+# init project
+cd /path/to/project/dir
+npm install
+
+# project is now ready
+```
+
+To try out the project, run this command
 ```
 gulp
 ```
-Does the following:
+This will:
 - Clean the build folder
-- Builds the webapp
-- Builds the cordova project for the selected platform
-- Runs the built stuff
+- Build the webapp
+- Build the cordova project for the selected platform (.apk for android, .ipa for ios)
+- Run the unit tests
+- Launch the app

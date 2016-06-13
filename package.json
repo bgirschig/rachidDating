@@ -1,13 +1,13 @@
 {
-  "name": "workflow_1",
+  "name": "rachidDating",
   "version": "1.0.0",
-  "description": "workflow test #1, using gulp cordova and other stuff",
+  "description": "A dating app targetted at underground users. built using cordova",
   "main": "index.js",
-  "scripts": {
-    "test": "test.js"
-  },
+  "scripts": {},
   "keywords": [
-    "workflow"
+    "dating",
+    "rachid",
+    "cordova"
   ],
   "author": "Bastien Girschig <bastien.girschig@gmail.com> (http://www.bastiengirschig.fr)",
   "license": "MIT",
