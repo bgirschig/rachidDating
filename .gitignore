@@ -1,5 +1,2 @@
-cordovaProject/platforms
-cordovaProject/www
+cordovaProject
 node_modules
-cordovaProject/hooks
-cordovaProject/plugins
