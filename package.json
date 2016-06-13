@@ -1,0 +1,22 @@
+{
+  "name": "workflow_1",
+  "version": "1.0.0",
+  "description": "workflow test #1, using gulp cordova and other stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "workflow"
+  ],
+  "author": "Bastien Girschig <bastien.girschig@gmail.com> (http://www.bastiengirschig.fr)",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-exec": "^2.1.2",
+    "gulp-shell": "^0.5.2"
+  }
+}
