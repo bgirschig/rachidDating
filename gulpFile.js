@@ -10,7 +10,8 @@ var settings = {
 	sourceFolder: "src/",
 	testFolder: "tests/",
 	buildFolder: "cordovaProject/www/",
-	platform: "android"
+	platform: "android",
+	isProd: false
 }
 
 // builds the web app (not the cordova native export)
