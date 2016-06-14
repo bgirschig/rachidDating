@@ -40,7 +40,7 @@ gulp.task('webAppBuild', function() {
 })
 
 // runs unit tests
-gulp.task('unit-test', function(){	
+gulp.task('test', function(){	
 	gulp.src([settings.sourceFolder+"/js/utils.js", settings.testFolder+"**/*.js"])
 	.pipe(concat(settings.testFolder+'tests.js'))
 	.pipe(testing());
@@ -83,6 +83,6 @@ gulp.task("default", [
 	'clean'
 	,'jadeBuild'
 	,'webAppBuild'
-	,'unit-test'
+	,'test'
 	,"run"
 ]);

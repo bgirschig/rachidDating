@@ -44,7 +44,7 @@ gulp clean
 gulp webAppBuild
 
 # run unit tests
-gulp unit-test
+gulp test
 
 # run the current version of the app
 gulp run
