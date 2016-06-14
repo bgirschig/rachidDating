@@ -1,0 +1,48 @@
+// learning jade basics
+
+doctype html
+html(lang="en")
+	head
+		title= pageTitle
+	body
+		div
+			h3 Attributes
+			form(id='theThing')
+				label(for='doTheThing') Do you want to do the thing?
+				input(type='checkbox', id='doTheThing')
+				br
+				label(for='name') What is the name of the thing you want to do
+				input(type='kak', id='name')
+		
+		div
+			h3 Case
+			- var friends = 10
+			case friends
+				when 0: p you have no friends
+				when 1: p you have a friend
+				default: p you have #{friends} friends
+
+		div
+			h3 Code
+			div
+				- for (var x = 0; x < 3; x++)
+					li this is item number #{x}
+			div
+				- list = ["Uno", "Dos", "Tres"]
+				- each item in list
+					li #{item}
+
+		div
+			h3 Includes
+			- for (var x = 0; x < 3; x++)
+				include ../modules/userLine.jade
+
+		div
+			h3 Mixins
+			mixin menuItem(text, src)
+				a(href=src, title="first google result for: " + text) #{text}
+				br
+
+			+menuItem("bonjour", "https://en.wikipedia.org/wiki/Bonjour_(software)")
+			+menuItem("salut", "https://en.wiktionary.org/wiki/salut")
+			+menuItem("blerg", "http://www.urbandictionary.com/define.php?term=blerg")

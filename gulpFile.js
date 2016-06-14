@@ -4,6 +4,7 @@ var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 var colors = require('colors');
 var testing = require('gulp-testing');
+var jade = require('gulp-jade');
 
 var settings = {
 	sourceFolder: "src/",
@@ -54,6 +55,16 @@ gulp.task('clean', function(){
 	});
 })
 
+gulp.task('jadeBuild', function(){
+	var jadeSettings = {
+		locals:{},
+		pretty: !settings.isProd
+	}
+	gulp.src(settings.sourceFolder+'pages/*.jade')
+    .pipe(jade(jadeSettings))
+    .pipe(gulp.dest(settings.buildFolder+'pages/'))
+})
+
 // calls 'cordova run [platform]' where [platform] is the 'platform' setting.
 gulp.task('run', function(){
 	console.log("building and running cordova project...".yellow);
@@ -69,6 +80,7 @@ gulp.task('run', function(){
 
 gulp.task("default", [
 	'clean'
+	,'jadeBuild'
 	,'webAppBuild'
 	,'unit-test'
 	,"run"
