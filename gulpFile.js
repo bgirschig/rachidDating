@@ -38,6 +38,11 @@ gulp.task('webAppBuild', function() {
 	gulp.src([settings.sourceFolder+"img/**"], {base: ''})
 	.pipe(gulp.dest(settings.buildFolder+"img/"));
 
+	// Copy fonts
+	gulp.src([settings.sourceFolder+"fonts/**"], {base: ''})
+	.pipe(gulp.dest(settings.buildFolder+"fonts/"));
+
+	gulp.run("jadeBuild");
 })
 
 // runs unit tests
