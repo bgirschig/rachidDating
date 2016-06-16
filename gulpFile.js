@@ -11,6 +11,7 @@ var settings = {
 	testFolder: "tests/",
 	buildFolder: "cordovaProject/www/",
 	platform: "android",
+	appName:"Odéon",
 	isProd: false
 }
 
@@ -58,7 +59,7 @@ gulp.task('clean', function(){
 
 gulp.task('jadeBuild', function(){
 	var jadeSettings = {
-		locals:{},
+		locals:{"appName":settings.appName},
 		pretty: !settings.isProd
 	}
 	gulp.src(settings.sourceFolder+'pages/*.jade')
