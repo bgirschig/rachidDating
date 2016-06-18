@@ -15,11 +15,11 @@ body.intro{
 }
 .intro h1{
     font-family: 'magic_marblesitalic';
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
     top: 20%;
     position: relative;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 .intro .tuto {
@@ -35,13 +35,13 @@ body.intro{
 }
 .connectionLinks a{
     height: 100%;
-    height: 150px;
-    line-height: 150px;
+    height: 75px;
+    line-height: 75px;
     display: block;
-    font-size: 3em;
-    padding-left: 5%;
+    font-size: 1,8em;
+    padding-left: 10%;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .connectionLinks a i{
     margin-right: 2%;
