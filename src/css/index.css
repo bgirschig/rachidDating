@@ -1,3 +1,5 @@
+//////////////////////////// Global ///////////////////////////
+
 @font-face {
     font-family: 'magic_marblesitalic';
     src: url('fonts/magic_marbles_italic-webfont.woff2') format('woff2'),
@@ -11,11 +13,24 @@ html, body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-body.intro{
-    color: white;
     font-family: "Lato";
-    background-image: url("http://lorempixel.com/500/700/abstract/");
+    color: white;
+}
+h2{
+    display: block;
+    background-color: #4a4a4a;
+    text-align: center;
+    font-size: 1em;
+    line-height: 60px;
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+}
+
+//////////////////////////// CSS Intro Page ///////////////////////////
+
+body.intro{
+    background-image: url("http://lorempixel.com/1440/2560/city/");
     background-size: cover;
 }
 .intro h1{
@@ -45,10 +60,103 @@ body.intro{
     outline: none;
 }
 #gg{
-    background: #dd4b39 url("img/g+.svg") no-repeat 20px center;
+    background: #db3236 url("img/g+.svg") no-repeat 20px center;
+    background-size: 45px;
+}
+#gg:active{
+    background: #ce1d21 url("img/g+.svg") no-repeat 20px center;
     background-size: 45px;
 }
 #fb{
-    background: #3B5998 url("img/fb.svg") no-repeat 20px center;
+    background: #3b5998 url("img/fb.svg") no-repeat 20px center;
     background-size: 45px;
 }
+#fb:active{
+    background: #204592 url("img/fb.svg") no-repeat 20px center;
+    background-size: 45px;
+}
+
+//////////////////////////// CSS Inscription Page ///////////////////////////
+
+.gender{
+    position: absolute;
+    width: 100%;
+}
+.gender button{
+    width: 49%;
+    height : 45px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+}
+#man{
+    background: transparent url("img/man.svg") no-repeat center;
+    background-size: 45px;
+}
+#man:focus{
+    background: transparent url("img/manactive.svg") no-repeat center;
+    background-size: 45px;
+}
+#woman{
+    background: transparent url("img/woman.svg") no-repeat center;
+    background-size: 45px;
+}
+#woman:focus{
+    background: transparent url("img/womanactive.svg") no-repeat center;
+    background-size: 45px;
+}
+.login input {
+    display: block;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #dbdbdb;
+    outline: none;
+    font-family: "Lato";
+    color: #9b9b9b;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: "Lato";
+}
+#name{
+    border-top : 1px solid #dbdbdb;
+}
+.pix{
+    position: absolute;
+    width: 100%;
+}
+.pix button{
+    width: 100%;
+    height: 250px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    background: transparent url("img/pix.svg") no-repeat center;
+    background-size: auto 100%;
+}
+.pix button:active{
+    background: transparent url("img/pixactive.svg") no-repeat center;
+    background-size: auto 100%;
+}
+.validate{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+.validate input{
+    width: 100%;
+    height: 60px;
+    background-color: #50E3C2;
+    border: none;
+    font-family: "Lato";
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+}
+.validate input:active{
+    background-color: #30d4af;
+}
+
+

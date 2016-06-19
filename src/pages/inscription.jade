@@ -1,0 +1,24 @@
+// intro page
+// https://drive.google.com/folderview?id=0B02ga7yq3-4oam1VcUF1OXFZU0k&usp=drive_web
+
+doctype html
+html(lang="en")
+	head
+		title=appName
+		link(rel="stylesheet" type="text/css" href="../styles.css")
+		link(href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+	body
+		h2 Inscription
+			div.gender
+				button(id="man")
+				button(id="woman")
+			
+			form.login
+				input(id="name", placeholder="Nom")
+				input(id="birth", placeholder="Date de naissance")
+
+			div.pix
+				button
+
+			div.validate
+				input(type="submit")		
