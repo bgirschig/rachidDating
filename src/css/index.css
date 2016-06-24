@@ -1,4 +1,4 @@
-//////////////////////////// Global ///////////////////////////
+/* Global */
 
 @font-face {
     font-family: 'magic_marblesitalic';
@@ -27,7 +27,7 @@ h2{
     margin-top: 0px;
 }
 
-//////////////////////////// CSS Intro Page ///////////////////////////
+/* CSS Intro Page */
 
 body.intro{
     background-image: url("http://lorempixel.com/1440/2560/city/");
@@ -76,7 +76,7 @@ body.intro{
     background-size: 45px;
 }
 
-//////////////////////////// CSS Inscription Page ///////////////////////////
+/* CSS Inscription Page */
 
 .gender{
     position: absolute;
