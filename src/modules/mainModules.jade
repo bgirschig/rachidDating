@@ -1,0 +1,7 @@
+mixin designLink(url)
+	a.designLink(href=url) design reference
+
+mixin singleChoice(name, choices)
+	each choice in choices
+		input(type="radio" name="#{name}" id="#{name}" value="#{choice}")
+		label(for="#{name}")= choice

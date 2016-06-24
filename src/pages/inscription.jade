@@ -1,25 +1,20 @@
-// https://lh3.googleusercontent.com/HzLzjQxTf_JqRKVe_XCneaeR8R9Zx6Cfx8nvZH-YKZ6p2Cvk-e9w1fmjGR03cXMYDaK2eQ=w2506-h1116
+extends ../layouts/mainLayout.jade
 
-doctype html
-html(lang="en")
-	head
-		title=appName
-		link(rel="stylesheet" type="text/css" href="../styles.css")
-		link(href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css')
-		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-		meta(charset="UTF-8")
-	body
-		h2 Inscription
-			div.gender
-				button(id="man")
-				button(id="woman")
-			
-			form.login
-				input(id="name", placeholder="Nom")
-				input(id="birth", placeholder="Date de naissance")
+block variables
+	- var bodyClass = "inscription"
+	- var designLink = "https://lh3.googleusercontent.com/HzLzjQxTf_JqRKVe_XCneaeR8R9Zx6Cfx8nvZH-YKZ6p2Cvk-e9w1fmjGR03cXMYDaK2eQ=w2506-h1116"
+block content
+	h2 Inscription
+	div.gender
+		button(id="man")
+		button(id="woman")
+	
+	form.login
+		input(id="name", placeholder="Nom")
+		input(id="birth", placeholder="Date de naissance")
 
-			div.pix
-				button
+	div.pix
+		button
 
-			div.validate
-				input(type="submit")
+	div.validate
+		input(type="submit")
