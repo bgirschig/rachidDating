@@ -1,15 +1,12 @@
-// https://lh3.googleusercontent.com/Cu9p4_RMwHnKp6e322WD-95ONJ5wbY286B7ibS04vBFGCBv7PCM8boYSD3fdB_yIe1dZ2Q=w2506-h1116
+extends ../layouts/mainLayout.jade
 
-doctype html
-html(lang="en")
-	head
-		title=appName
-		link(rel="stylesheet" type="text/css" href="../styles.css")
-		link(href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css')
-		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-		meta(charset="UTF-8")
-	body(class="intro")
-		h1 odeon
-		div.connectionLinks
-			button(id="gg") Se connecter avec Gmail
-			button(id="fb") Se connecter avec Facebook
+block variables
+	- var bodyClass = "intro"
+	- var designLink = "https://drive.google.com/open?id=0B02ga7yq3-4oSzJuZU5zNXJ4Y28"
+
+block header
+block content
+	h1=appName
+	div.connectionLinks
+		button(id="gg") Se connecter avec Gmail
+		button(id="fb") Se connecter avec Facebook

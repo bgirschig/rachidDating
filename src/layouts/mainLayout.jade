@@ -1,0 +1,19 @@
+include ../modules/mainModules.jade
+block variables
+
+doctype html
+html
+	head
+		meta(name="author" content="rachid thiah boussas")
+		title=appName
+		link(rel="stylesheet" type="text/css" href="../styles.css")
+		link(href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(charset="UTF-8")
+
+	body(class="#{bodyClass}")
+		block header
+		block content
+
+		if designLink
+			+designLink(designLink)
